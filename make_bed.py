@@ -37,7 +37,7 @@ def make_bed(file, intype):
 				for ln in phobiusout:
 					ln = ln.split()
 					if ln[2] == "Y":
-						#use regex to find the signal peptide start and finish string
+						#find the signal peptide start and finish string
 						start = re.search(r"n\d+-", ln[3]) 
 						end = re.search(r"-\d+c", ln[3])
 						#make signal readable 
@@ -46,7 +46,6 @@ def make_bed(file, intype):
 						start = int(start[1:-1]) - 1
 						end = int(end[1:-1]) - 1
 						signal = f"{ln[0]}\t{start}\t{end}" #add gene name to first column 
-						#bed_list.append(signal)
 						bedfile.write(f"{signal}\n")
 				phobiusout.close()
 		
