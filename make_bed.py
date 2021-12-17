@@ -28,7 +28,6 @@ def make_bed(file, intype):
 					else:
 						#bed file for query hits, columns 6/7 are query start/end
 						bed = f"{ln[0]}\t{int(ln[6]) - 1}\t{int(ln[7])}"
-					#bed_list.append(bed)
 					bedfile.write(f"{bed}\n")
 				blastfile.close()
 
