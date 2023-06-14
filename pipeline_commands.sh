@@ -1,3 +1,4 @@
+## rename FASTA sequences before starting to only include unique uniprot ID or similar alphanumeric name
 ## BLASTP full-length parasite proteins against control proteins
 makeblastdb -in CONTROLS.fasta -dbtype prot -parse_seqids
 blastp -db CONTROLS.fasta -query PARASITE.fasta -num_threads 10 -outfmt 6 -out CONTROL_hits.out -evalue 1e-10 
