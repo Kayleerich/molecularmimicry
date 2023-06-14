@@ -39,7 +39,7 @@ python3 count_filtered_kmers.py -i PARASITE_candidate_kmers.out > PARSITE_highID
 ## calculate QSASA for every protein structure, combine output from individual chains 
 ls *.pdb.gz > structures_file_names.list
 while IFS= read -r file; do
-    name=$( echo ${file} | sed 's/^AF-//' | sed 's/.pdb.gz//' )
+    name=$( echo ${file} | sed 's/^AF-//' | sed 's/.pdb.gz//' ) ## names should exactly match FASTA names
     ~/POPScomp/POPSC/src/pops --pdb {wdir}/${file}  --zipped --residueOut --popsOut pops_${name}.out 
 done < structure_file_names.list
 
