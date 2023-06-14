@@ -57,7 +57,7 @@ coords_list_dicts = {}
 with open(blastfilename, 'r') as blast_file:
     for ln in blast_file:
         ln = ln.split()
-        pair = ln[0].split('|')[1] + "." + ln[1] ## might need to be changed depending on sequence names: ln[0].split('/')[0] + "." + ln[1]
+        pair = ln[0].split('/')[0] + "." + ln[1] ## might need to be changed depending on sequence names: ln[0].split('|')[1] + "." + ln[1]
 
         kcoords = ln[0].split('/')[1]
         kstart = int(kcoords.split(':')[0]) - 1
