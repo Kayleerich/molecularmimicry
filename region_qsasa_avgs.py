@@ -34,7 +34,12 @@ if args.pops_path:
 else:
     pops_path = Path(".")
 hpops_path = Path(f"{pops_path}/{h_name}/pops")
+if not os.path.isdir(hpops_path):
+    hpops_path.mkdir(parents=True, exist_ok=True)
+    
 ppops_path = Path(f"{pops_path}/{p_name}/pops")
+if not os.path.isdir(ppops_path):
+    ppops_path.mkdir(parents=True, exist_ok=True)
 
 if args.fileid:
     fileid = args.fileid
