@@ -1,0 +1,2 @@
+pathogenProtein	pStart	pEnd	pathogenSequence	hostProtein	hStart	hEnd	hostSequence	alnScore	percID
+Q9K2J9	383	394	PAPTPTPTPEQ	Q13164	590	601	PAPTPTPTPVQ	57.0	90.9090909090909

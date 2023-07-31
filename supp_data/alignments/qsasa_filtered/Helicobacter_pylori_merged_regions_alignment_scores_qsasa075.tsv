@@ -1,0 +1,2 @@
+pathogenProtein	pStart	pEnd	pathogenSequence	hostProtein	hStart	hEnd	hostSequence	alnScore	percID
+O24923	149	160	GGMGMYGPGFG	Q9P2K5	361	372	GGMGMDGPGFG	56.0	90.9090909090909
