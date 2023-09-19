@@ -1,2 +1,0 @@
-pathogenProtein	pStart	pEnd	pathogenSequence	hostProtein	hStart	hEnd	hostSequence	alnScore	percID
-O07036	68	80	GEPGLGGEPGAG	Q17RW2	1040	1052	GEPGLRGEPGAP	52.0	83.33333333333333

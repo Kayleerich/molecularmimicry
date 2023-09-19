@@ -1,0 +1,2 @@
+pathogenProtein	pStart	pEnd	pathogenSequence	hostProtein	hStart	hEnd	hostSequence	alnScore	percID
+A0A0N4UCV2	226	239	IFDVEIESTSPKP	Q9Y2D4	252	265	IFDTEIESTSPKS	54.0	84.61538461538461
